@@ -27,6 +27,13 @@
   "\n" \
   "var object;\n" \
 
+#define B_139806216_JS \
+  u""\
+  "function FindProxyForURL(url, host){\n" \
+  "    var x = new ArrayBuffer(1);\n" \
+  "    return \"DIRECT\";\n" \
+  "}\n" \
+
 #define BINDING_FROM_GLOBAL_JS \
   "// Calls a bindings outside of FindProxyForURL(). This causes the code to\n" \
   "// get exercised during initialization.\n" \
